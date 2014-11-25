@@ -1,0 +1,38 @@
+extends layout
+block content
+	div.col_12
+		h1= title
+		
+		div(class='tab-content clearfix')
+			// Wrapper
+			h5 Connection status :  
+				if(connectionStatus == 'Connected')
+					span(class='notice success')= connectionStatus
+				else
+					span(class='notice warning')= connectionStatus
+			br
+			
+			#wrapper
+				p
+					label(for='filterLang') Filter by language &nbsp;
+					input(type='text', id='filterLang', placeHolder='language', value='')
+					button#toggle(class="medium") Switch to embedded display
+				#tweets
+					table(class="tight sortable")
+						thead
+							th Id
+							th Screen Name
+							th Date Created
+							th Language					
+							th Text					
+						tbody
+							if(typeof(tweet) !== 'undefined')
+							each tweet in tweets
+								tr
+									td #{tweet.id}
+									td #{tweet.screenName}
+									td #{tweet.dateCreated}
+									td #{tweet.language}
+									td #{tweet.text}  		
+				#embedded-tweets(style='display:none;')
+				

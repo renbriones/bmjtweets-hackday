@@ -1,0 +1,17 @@
+﻿{
+	"name": "bmj-tweets",
+	"description": "display bmj tweets",
+	"version": "0.0.1",
+	"private": true,
+	"start": "node server",
+	"dependencies": {
+	    "express": "~4.0.0",
+	    "amqp": "*",
+	    "static-favicon": "~1.0.0",
+	    "morgan": "~1.0.0",
+	    "cookie-parser": "~1.0.1",
+	    "body-parser": "~1.0.0",
+	    "debug": "~0.7.4",
+	    "jade": "*"
+	}  
+}

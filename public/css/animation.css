@@ -1,0 +1,212 @@
+html {
+  background: black;
+}
+
+ul {
+  animation: slow-spin 10s linear infinite;
+  list-style: none;
+  height: 10rem;
+  margin: 15rem auto;
+  position: relative;
+  transform: rotateX(90deg);
+  transform-style: preserve-3d;
+  width: 10rem;
+}
+
+li {
+  animation: hue-rotate 5s linear infinite;
+  border-radius: 50%;
+  height: 50%;
+  position: absolute;
+  transform-origin: 50% 300%;
+  transform-style: preserve-3d;
+  width: 1rem;
+}
+li:nth-child(0) {
+  animation-delay: 0s;
+}
+li:nth-child(1) {
+  animation-delay: -0.139s;
+}
+li:nth-child(2) {
+  animation-delay: -0.278s;
+}
+li:nth-child(3) {
+  animation-delay: -0.417s;
+}
+li:nth-child(4) {
+  animation-delay: -0.556s;
+}
+li:nth-child(5) {
+  animation-delay: -0.695s;
+}
+li:nth-child(6) {
+  animation-delay: -0.834s;
+}
+li:nth-child(7) {
+  animation-delay: -0.973s;
+}
+li:nth-child(8) {
+  animation-delay: -1.112s;
+}
+li:nth-child(9) {
+  animation-delay: -1.251s;
+}
+li:nth-child(10) {
+  animation-delay: -1.39s;
+}
+li:nth-child(11) {
+  animation-delay: -1.529s;
+}
+li:nth-child(12) {
+  animation-delay: -1.668s;
+}
+li:nth-child(13) {
+  animation-delay: -1.807s;
+}
+li:nth-child(14) {
+  animation-delay: -1.946s;
+}
+li:nth-child(15) {
+  animation-delay: -2.085s;
+}
+li:nth-child(16) {
+  animation-delay: -2.224s;
+}
+li:nth-child(17) {
+  animation-delay: -2.363s;
+}
+li:nth-child(18) {
+  animation-delay: -2.502s;
+}
+li:nth-child(19) {
+  animation-delay: -2.641s;
+}
+li:nth-child(20) {
+  animation-delay: -2.78s;
+}
+li:nth-child(21) {
+  animation-delay: -2.919s;
+}
+li:nth-child(22) {
+  animation-delay: -3.058s;
+}
+li:nth-child(23) {
+  animation-delay: -3.197s;
+}
+li:nth-child(24) {
+  animation-delay: -3.336s;
+}
+li:nth-child(25) {
+  animation-delay: -3.475s;
+}
+li:nth-child(26) {
+  animation-delay: -3.614s;
+}
+li:nth-child(27) {
+  animation-delay: -3.753s;
+}
+li:nth-child(28) {
+  animation-delay: -3.892s;
+}
+li:nth-child(29) {
+  animation-delay: -4.031s;
+}
+li:nth-child(30) {
+  animation-delay: -4.17s;
+}
+li:nth-child(31) {
+  animation-delay: -4.309s;
+}
+li:nth-child(32) {
+  animation-delay: -4.448s;
+}
+li:nth-child(33) {
+  animation-delay: -4.587s;
+}
+li:nth-child(34) {
+  animation-delay: -4.726s;
+}
+li:nth-child(35) {
+  animation-delay: -4.865s;
+}
+li:nth-child(36) {
+  animation-delay: -5.004s;
+}
+
+@keyframes hue-rotate {
+  0% {
+    background: red;
+    box-shadow: 0 0 1rem red, 0 0 4rem red;
+    transform: rotate(0deg) rotateX(0deg) rotateY(0deg);
+  }
+
+  10% {
+    background: #ff9900;
+    box-shadow: 0 0 1rem #ff9900, 0 0 4rem #ff9900;
+    transform: rotate(36deg) rotateX(36deg) rotateY(36deg);
+  }
+
+  20% {
+    background: #ccff00;
+    box-shadow: 0 0 1rem #ccff00, 0 0 4rem #ccff00;
+    transform: rotate(72deg) rotateX(72deg) rotateY(72deg);
+  }
+
+  30% {
+    background: #33ff00;
+    box-shadow: 0 0 1rem #33ff00, 0 0 4rem #33ff00;
+    transform: rotate(108deg) rotateX(108deg) rotateY(108deg);
+  }
+
+  40% {
+    background: #00ff66;
+    box-shadow: 0 0 1rem #00ff66, 0 0 4rem #00ff66;
+    transform: rotate(144deg) rotateX(144deg) rotateY(144deg);
+  }
+
+  50% {
+    background: cyan;
+    box-shadow: 0 0 1rem cyan, 0 0 4rem cyan;
+    transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+  }
+
+  60% {
+    background: #0066ff;
+    box-shadow: 0 0 1rem #0066ff, 0 0 4rem #0066ff;
+    transform: rotate(216deg) rotateX(216deg) rotateY(216deg);
+  }
+
+  70% {
+    background: #3300ff;
+    box-shadow: 0 0 1rem #3300ff, 0 0 4rem #3300ff;
+    transform: rotate(252deg) rotateX(252deg) rotateY(252deg);
+  }
+
+  80% {
+    background: #cc00ff;
+    box-shadow: 0 0 1rem #cc00ff, 0 0 4rem #cc00ff;
+    transform: rotate(288deg) rotateX(288deg) rotateY(288deg);
+  }
+
+  90% {
+    background: #ff0099;
+    box-shadow: 0 0 1rem #ff0099, 0 0 4rem #ff0099;
+    transform: rotate(324deg) rotateX(324deg) rotateY(324deg);
+  }
+
+  100% {
+    background: red;
+    box-shadow: 0 0 1rem red, 0 0 4rem red;
+    transform: rotate(360deg) rotateX(360deg) rotateY(360deg);
+  }
+}
+@keyframes slow-spin {
+  from {
+    transform: rotateX(90deg) rotate(0deg) rotateY(0deg);
+  }
+
+  to {
+    transform: rotateX(90deg) rotate(360deg) rotateY(360deg);
+  }
+}

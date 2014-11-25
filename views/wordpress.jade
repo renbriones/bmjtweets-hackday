@@ -1,0 +1,19 @@
+extends layout
+block content
+	div.col_12
+		h1= title
+		
+		p 
+			blockquote Students in Aberdeen have the opportunity to study medicine in a thriving medical school that is co-located on one of the largest clinical sites in Europe with superb teaching and extensive research facilities. The course students undertake is very modern, dynamic and clearly delivered using a systems-based, integrated approach.
+		
+		button#toggle(class="medium" disabled="disabled") Application process
+		button#toggle(class="medium") 
+			a(href="/aberdeen-grades") Grades
+		button#toggle(class="medium") 
+			a(href="/aberdeen-interviews") Interviews
+		button#toggle(class="medium") Personal Statement
+		
+		div !{pageContent}
+			
+			
+			

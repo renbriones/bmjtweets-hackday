@@ -1,0 +1,40 @@
+body {
+  padding: 30px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 1200px;  
+}
+
+h2 {
+	margin:0 0 .5em 0;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#wrapper {
+	/*padding-left:20px; 
+	position:relative;*/
+}
+
+#connectionStatus {
+	padding-bottom:20px; 
+	position:relative;
+}
+
+#tweets {
+	margin:0 0 30px 0;
+}
+
+		#tweets table th {
+			background:#EEE;
+			font-weight:600;
+			padding:10px 20px;
+			text-align:center;
+		}
+
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+}
